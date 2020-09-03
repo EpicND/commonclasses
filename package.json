@@ -4,7 +4,15 @@
   "description": "wowowo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "yarn build-all",
+    "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
+    "preserve": "yarn build-all",
+    "serve": "firebase serve",
+    "predeploy": "yarn build-all",
+    "deploy": "firebase deploy",
+    "build-all": "yarn build-next && yarn build-firebase",
+    "build-next": "cd \"src/app\" && yarn && yarn build",
+    "build-firebase": "cd \"src/functions\" && yarn"
   },
   "repository": {
     "type": "git",
@@ -15,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/EpicND/commonclasses/issues"
   },
-  "homepage": "https://github.com/EpicND/commonclasses#readme"
+  "homepage": "https://github.com/EpicND/commonclasses#readme",
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
