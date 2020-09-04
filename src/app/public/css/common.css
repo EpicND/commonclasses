@@ -63,6 +63,7 @@ header {
 
 html, body {
     overflow-x: hidden;
+    min-height:110%;
 }
 
 .header-contents-l2 {
@@ -74,6 +75,10 @@ html, body {
     .header-contents-l a {
         display: none;
     }
+
+    .fa {
+        margin-top: 11px;
+    }
     .header-contents-r {
         display: none;
     }
@@ -81,6 +86,7 @@ html, body {
     .logo {
         display: block !important;
         width: 100%;
+        font-size:25px;
     }
 
     .header-contents-l {
@@ -89,7 +95,11 @@ html, body {
     .header-contents-l2 {
         width:inherit;
         display:block;
+        transition: all 0.25s ease;
     }
+    /* .header-contents-l2 a:hover {
+        color:#5eb2ff;
+    } */
 
     .mobile-flex {
         flex-grow:1;
@@ -99,4 +109,33 @@ html, body {
 
 .osh {
     opacity:0;
+}
+
+.dropdown-open {
+    transition: height 0.25s ease-in;
+    position: fixed;
+    width: 100%;
+    transition: all 1s ease;
+    height: calc(100vh - 50px) !important;
+    top: 68px;
+    background-color: black;
+}
+
+.dropdown-contents {
+    transition: height 0.25s ease-in;
+    height:0px;
+    width: 100%;
+    transition: all 1s ease;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.dd-component {
+    flex-grow:1;
+    max-height:50px;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Titillium Web', sans-serif;
 }
