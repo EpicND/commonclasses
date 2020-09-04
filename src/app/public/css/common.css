@@ -11,7 +11,6 @@ header {
     letter-spacing: .3px;
     font-family: 'Titillium Web', sans-serif;
     width:100%;
-    padding:18px;
     vertical-align: middle;
     box-shadow: 0 4px 8px rgba(0,0,0,.25), 0 0 0 transparent;
     backdrop-filter: blur(5px);
@@ -27,7 +26,9 @@ header {
     font-size:16px;
     margin:auto;
     display:flex;
+    padding: 20px;
 }
+
 .header-contents-l {
     width:inherit;
 }
@@ -70,15 +71,23 @@ html, body {
 
     .logo {
         display: block !important;
+        width: 100%;
     }
 
     .header-contents-l {
         transition: all 0.25s ease;
-        width:100%;
     }
     .header-contents-l2 {
         width:inherit;
         display:block;
     }
+
+    .mobile-flex {
+        flex-grow:1;
+    }
     
+}
+
+.osh {
+    opacity:0;
 }
