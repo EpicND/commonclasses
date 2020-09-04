@@ -9,7 +9,7 @@ const Post = () => {
   return (
     <>
       <Header />
-      <h1>Post: {id}</h1>
+      <h1>Room: {id}</h1>
       <ul>
         
       </ul>
