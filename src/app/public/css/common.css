@@ -19,7 +19,6 @@ header {
 .logo {
     font-size:19px;
     color:black !important;
-
 }
 
 .header-contents {
@@ -31,8 +30,16 @@ header {
 
 .header-contents-l {
     width:inherit;
+    
 }
+
+.header-contents-l a:hover {
+    font-size:19px;
+    transition: all 0.25s ease-in-out;
+}
+
 .header-contents-r {
+    cursor:pointer;
     margin-top:-1px;
     font-size:13px;
     transition: all 0.25s ease;
@@ -50,6 +57,8 @@ header {
 .header-contents-l a {
     margin-right:35px;
     text-align:center;
+    transition: all 0.25s ease-in-out;
+    cursor:pointer;
 }
 
 html, body {
