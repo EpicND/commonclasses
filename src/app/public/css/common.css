@@ -18,6 +18,7 @@
 }
 
 header {
+    opacity: .9;
     z-index:100;
     position: fixed;
     background-color:white;
@@ -109,9 +110,9 @@ html, body {
         transition: all 0.25s ease;
     }
     .header-contents-l2 {
-        width:inherit;
         display:block;
         transition: all 0.25s ease;
+        width:0px;
     }
     /* .header-contents-l2 a:hover {
         color:#5eb2ff;
@@ -170,6 +171,10 @@ html, body {
     font-family: 'MyWebFont2', sans-serif !important;
 }
 
+.hcsJyR {
+    padding:0px;
+}
+
 
 
 .underline {
@@ -202,3 +207,24 @@ html, body {
     transition: all .5s ease;
     opacity:0;
   }
+
+  .jpigzT, .jpigzT::before, .jpigzT::after {
+      width:30px;
+      height:2px;
+  }
+  .sc-bdnylx {
+      outline:none;
+  }
+
+  .osh-shadow {
+      box-shadow: none;
+      opacity:1;
+  }
+
+  /* .jpigzT::before {
+    top: -8px;
+}
+.jpigzT::after {
+    bottom: -8px;
+} */
+  
