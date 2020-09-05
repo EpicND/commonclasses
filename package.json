@@ -7,7 +7,7 @@
     "install": "yarn build-all",
     "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
     "preserve": "yarn build-all",
-    "serve": "firebase serve",
+    "serve": "npm run build-all && firebase serve",
     "predeploy": "yarn build-all",
     "deploy": "firebase deploy",
     "build-all": "yarn build-next && yarn build-firebase",

@@ -1,8 +1,11 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Header from '../../../components/header'
+import Header from '../../../components/Header.js'
 
-const Post = () => {
+// var props = {}
+
+// props.id = 
+const Post = ({props}) => {
   const router = useRouter()
   const { id } = router.query
 
@@ -16,5 +19,9 @@ const Post = () => {
     </>
   )
 }
+// export async function getServerSideProps() {
+//   var id = await router.query;
+//   return {props: {id}}
+// }
 
 export default Post

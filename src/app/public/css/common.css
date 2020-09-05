@@ -7,6 +7,7 @@
 }
 
 header {
+    position: fixed;
     background-color:white;
     letter-spacing: .3px;
     font-family: 'Titillium Web', sans-serif;
@@ -26,15 +27,17 @@ header {
     margin:auto;
     display:flex;
     padding: 20px;
+
 }
 
 .header-contents-l {
     width:inherit;
-    
+    color: rgb(107, 107, 107);
 }
 
 .header-contents-l a:hover {
-    font-size:19px;
+    /* font-size:19px; */
+    color: black;
     transition: all 0.25s ease-in-out;
 }
 
@@ -104,6 +107,10 @@ html, body {
     .mobile-flex {
         flex-grow:1;
     }
+
+    .dropdown-contents {
+        top:70px;
+    }
     
 }
 
@@ -113,29 +120,67 @@ html, body {
 
 .dropdown-open {
     transition: height 0.25s ease-in;
-    position: fixed;
     width: 100%;
+    padding-top:30%;
     transition: all 1s ease;
     height: calc(100vh - 50px) !important;
-    top: 68px;
     background-color: black;
+    opacity:1 !important;
 }
 
 .dropdown-contents {
+    position: fixed;
     transition: height 0.25s ease-in;
     height:0px;
     width: 100%;
     transition: all 1s ease;
     background-color: white;
-    display:flex;
-    flex-direction: column;
+    /* display:flex; */
+    /* flex-direction: column; */
     overflow:hidden;
+    /* font-size: 12px; */
+    opacity:0;
 }
 
+
+
 .dd-component {
+    cursor: pointer;
     flex-grow:1;
     max-height:50px;
     text-align: center;
-    font-size:30px;
+    margin:20px;
+    font-size:20px;
     font-family: 'Titillium Web', sans-serif;
 }
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -3px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .osh-ani {
+    transition: all .5s ease;
+    opacity:0;
+  }
