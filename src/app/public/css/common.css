@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('LIBRARY3AM.woff') format('woff') /* Pretty Modern Browsers */
+  }
+  @font-face {
+    font-family: 'MyWebFont2';
+    src: url('summit.woff') format('woff') /* Pretty Modern Browsers */
+  }
+
+
+
 * {
     margin:0px;
     padding: 0px;
 }
 
 header {
+    z-index:100;
     position: fixed;
     background-color:white;
     letter-spacing: .3px;
@@ -18,6 +30,7 @@ header {
 }
 
 .logo {
+    font-family: 'MyWebFont', sans-serif;
     font-size:19px;
     color:black !important;
 }
@@ -129,6 +142,7 @@ html, body {
 }
 
 .dropdown-contents {
+    z-index: 2;
     position: fixed;
     transition: height 0.25s ease-in;
     height:0px;
@@ -140,19 +154,23 @@ html, body {
     overflow:hidden;
     /* font-size: 12px; */
     opacity:0;
+    
 }
 
 
 
 .dd-component {
+    z-index:2;
     cursor: pointer;
     flex-grow:1;
     max-height:50px;
     text-align: center;
     margin:20px;
     font-size:20px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'MyWebFont2', sans-serif !important;
 }
+
+
 
 .underline {
     display: inline;
