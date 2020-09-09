@@ -47,11 +47,14 @@ body {
     .subttl {
         font-size: 4vw!important;
     }
+    .button-modal {
+        margin:auto;
+    }
 }
 
 .mtxt--bx {
     position: relative;
-    top: 25vh;
+    top: 20vh;
     left:10vw;
     max-width: 70%;
 }
@@ -76,6 +79,50 @@ body {
     color:green;
 }
 
+.button-modal {
+    cursor: pointer;
+    margin-top:40px !important;
+    background-color: #553445;
+    height:80px;
+    width:300px;
+    text-align:center;
+    color:white;
+    line-height:80px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    transition: all 0.5s ease-in-out;
+    overflow:hidden;
+}
+
+.btn-modal_active {
+    height: 120px !important;
+    line-height:120px !important;
+}
+
+.btntxt-1__1 {
+    transition: all 0.5s ease-in-out;
+    top: 0px;
+    position: relative;
+}
+
+.btntxt-1__active {
+    transition: all 0.5s ease-in-out;
+    top: -80px;
+    position: relative;
+}
+
+.btntxtbox__1 {
+    transition: all 0.5s ease-in-out;
+    position:relative;
+    top:0px;
+    line-height:40px;
+    font-size:15px;
+}
+
+.btntxtbox__active {
+    top:-120px;
+}
 
 /* 
 ::-webkit-scrollbar {
