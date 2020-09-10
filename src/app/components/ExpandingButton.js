@@ -23,7 +23,7 @@ export default class ExpandingButton extends Component {
     return(
         <div className="button-wrapper">
             <div ref={this.button} onClick={() => this.handleClick()} className="button-modal"> 
-                <a ref={this.buttontxt} className="btntxt-1__1"> Get Started </a>
+                <a ref={this.buttontxt} className="btntxt-1__1 anitxt__3"> Get Started </a>
                 <div ref={this.buttonbox} className="osh btntxtbox__1">
                     <a> Quickstart </a> <br />
                     <hr />
